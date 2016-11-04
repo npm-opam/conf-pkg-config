@@ -39,7 +39,8 @@
         "substs": "https://github.com/yunxing/substs.git",
         "nopam": "https://github.com/yunxing/nopam.git",
         "opam-installer-bin": "https://github.com/yunxing/opam-installer-bin.git",
-        "dependency-env": "https://github.com/npm-ml/dependency-env.git"
+        "dependency-env": "https://github.com/npm-ml/dependency-env.git",
+        "yarn-pkg-config": "*"
     },
     "scripts": {
         "postinstall": "eval $(dependencyEnv) && nopam && pkg-config --help && (opam-installer --prefix=$opam_prefix || true)"
